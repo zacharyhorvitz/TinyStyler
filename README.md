@@ -78,13 +78,13 @@ chmod +x download.sh
 
 ## Models
 
-- The weights for TinyStyler are [here](). This model is fine-tuned on ~40K examples filtered from 160K authorship transfers generated with the reconstruction approach.
+- The weights for TinyStyler models are [here](https://drive.google.com/drive/folders/1ThlK2oeBBaclWGEX5eb9fJeaZ4Oo53z9?usp=sharing). This model is fine-tuned on ~40K examples filtered from 160K authorship transfers generated with the reconstruction approach.
 - We also release a second model, TinyStyler<sub>Sim</sub>. This model is fine-tuned on ~33K examples filtered from 500K author transfers with a higher meaning threshold (0.85 vs 0.70).
 
 
 TinyStyler is also available on [Hugging Face](https://huggingface.co/tinystyler/tinystyler).
 
-Additionally, our initial TinyStyler reconstruction model checkpoint is available [here]().
+Additionally, our initial TinyStyler reconstruction model checkpoint is also available, under ``tinystyler_recon``.
 
 
 <div align="center">

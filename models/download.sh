@@ -1,6 +1,14 @@
 #!/bin/sh
 set -ex
 
-MODEL_DOWNLOAD_DIR="$(dirname "$0")" # Feel free to change this to your preferred location
+# TinyStyler
+mkdir tinystyler
+#gdown FILL IN (EMNLP wifi slow) --fuzzy -O tinystyler/model_weights.pt
 
-gdown https://drive.google.com/drive/folders/1ThlK2oeBBaclWGEX5eb9fJeaZ4Oo53z9?usp=sharing --fuzzy -O ${MODEL_DOWNLOAD_DIR}
+# TinyStyler_Sim
+mkdir tinystyler_sim
+gdown https://drive.google.com/file/d/19gJJLoD3up4Nvkt_oY4XezgiNNyFD6Yh/view?usp=drive_link --fuzzy -O tinystyler_sim/model_weights.pt
+
+# TinyStyler_Recon
+mkdir tinystyler_recon
+gdown --folder https://drive.google.com/drive/folders/14RVtTTed8T1qWeq9LsbOltPzwcB6QLU4?usp=sharing --fuzzy -O tinystyler_recon
