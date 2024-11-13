@@ -1,0 +1,1 @@
+{"out_dir": "/home/horvitz/ParaGuideV2/emnlp_eval/results/random/chatgpt/chatgpt_random", "data": "/home/horvitz/ParaGuideV2/emnlp_eval/styll_and_metrics/styll_data_and_metrics/dataset/random.json", "max_examples": 16, "max_source_texts": null, "model_name": "gpt-4-turbo"}

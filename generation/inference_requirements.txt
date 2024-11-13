@@ -1,0 +1,6 @@
+transformers==4.35.2
+torch==2.1.2+cu118
+tqdm==4.66.2
+datasets==2.8.0
+wandb==0.15.3
+click==8.1.3
