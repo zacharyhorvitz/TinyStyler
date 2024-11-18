@@ -94,7 +94,7 @@ def get_tinystyler_model(device, model_name='tinystyler'):
         torch.load(
             hf_hub_download(
                 repo_id="tinystyler/tinystyler",
-                filename=f"{model_name}/model_weights.pt",
+                filename=f"{model_name}_model_weights.pt",
             ),
             map_location=device,
         )
@@ -392,12 +392,13 @@ def run_tinystyler_batch(
     device="cpu",
     verbose=False,
     sim_func=compute_mis,
-    rerank_style_embed_fn=get_target_style_embeddings,
+    rerank_style_embed_fn=get_luar_embeddings,
     sim_sample=3,
+    model_name='tinystyler',
     **kwargs,
 ):
     bz = len(source_texts)
-    tokenizer, model = get_tinystyler_model(device)
+    tokenizer, model = get_tinystyler_model(device, model_name=model_name)
     inputs = tokenizer(
         source_texts, padding="longest", truncation=True, return_tensors="pt"
     ).to(device)
