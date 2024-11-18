@@ -392,7 +392,7 @@ def run_tinystyler_batch(
     device="cpu",
     verbose=False,
     sim_func=compute_mis,
-    rerank_style_embed_fn=get_luar_embeddings,
+    rerank_style_embed_fn=get_luar_embeddings, # Note: We use Style Embeddings (not LUAR) to rerank in our evals.
     sim_sample=3,
     model_name='tinystyler',
     **kwargs,
